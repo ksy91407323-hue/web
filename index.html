@@ -1,42 +1,74 @@
 <!DOCTYPE html>
+<html lang="ko">
 <head>
-   <meta charset="utf-8"/>
-   <title>다양한 입력 폼</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>개인 이력서</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h3>다양한 입력 폼</h3>
+  <header>
+    <div class="id">
+      <h1>dodo</h1>
+      <p class="affil">상명대학교 소프트웨어학과 1학년</p>
+      <p class="tagline">웹과 AI에 관심이 많은 신입생입니다.</p>
+    </div>
+    <a class="gh" href="https://github.com/ksy91407323-hue">GitHub 프로필</a>
+  </header>
 
-    <form method="get" action="https://lib.smu.ac.kr/search">
+  <main>
+    <section id="achievements">
+      <h2>실적</h2>
+      <table>
+        <caption>실적 목록 (최신순)</caption>
+        <thead>
+          <tr><th scope="col">시기</th><th scope="col">분류</th><th scope="col">내용</th><th scope="col">역할</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>2026.10</td><td>프로젝트</td><td>개인 이력서 웹페이지 제작 (수업 과제)</td><td>기획·제작·배포 전 과정 수행</td></tr>
+          <tr><td>2025.03</td><td>활동</td><td>고등학교 3학년 1학기 휴대폰 수거 봉사활동</td><td>휴대폰 수거 담당</td></tr>
+          <tr><td>2024.03</td><td>활동</td><td>고등학교 수학동아리 활동</td><td>동아리 부원</td></tr>
+          <tr><td>2022.12</td><td>수상</td><td>중학교 교과 우수상</td><td>수상자</td></tr>
+        </tbody>
+      </table>
+    </section>
 
-        검색어: <input type="text" name="q" value=""/> <br>
-        캡퍼스: <input type="radio" name="campuscode" value="00" />서울
-               <input type="radio" name="campuscode" value="01" checked/>천안<br>
+    <section id="courses">
+      <h2>수강 과목 (2026-2)</h2>
+      <ul>
+        <li><a href="#weekly">웹프로그래밍 및 AI에이전트 활용</a> <span>전공</span></li>
+        <li>정보 보안론 <span>전공</span></li>
+        <li>객체지향프로그래밍 <span>전공</span></li>
+        <li>문제해결과 인공지능 <span>교양</span></li>
+        <li>사고와 표현 <span>교양</span></li>
+        <li>예술세계의 탐구 <span>교양</span></li>
+      </ul>
+    </section>
 
-        직업: <select name="job"  size="1">
+    <section id="weekly">
+      <h2>웹프로그래밍 주차별 링크</h2>
+      <ol class="weeks">
+        <li class="done"><a href="doc01.html">1주</a></li>
+        <li class="done"><a href="doc02.html">2주</a></li>
+        <li class="done"><a href="doc03.html">3주</a></li>
+        <li class="done"><a href="doc04.html">4주</a></li>
+        <li class="done"><a href="doc05.html">5주</a></li>
+        <li class="done"><a href="doc06.html">6주</a></li>
+        <li class="done"><a href="doc07.html">7주</a></li>
+        <li class="todo">8주 (예정)</li>
+        <li class="todo">9주 (예정)</li>
+        <li class="todo">10주 (예정)</li>
+        <li class="todo">11주 (예정)</li>
+        <li class="todo">12주 (예정)</li>
+        <li class="todo">13주 (예정)</li>
+        <li class="todo">14주 (예정)</li>
+        <li class="todo">15주 (예정)</li>
+      </ol>
+    </section>
+  </main>
 
-                    <option>학생</option> <option>회사원</option>
-
-                    <option>공무원</option> <option>기타</option>
-
-                </select>
-
-    <p> 구입희망분야(복수선택 가능)<br>
-
-    - 분야: <input type="checkbox" name="books" value="computer"/>컴퓨터
-
-                <input type="checkbox" name="books" value="economy"/>경제
-
-                <input type="checkbox" name="books" value="common"/>상식<br>
-
-        비고: <br>
-
-                <textarea name="comments" rows="4" cols="40"/></textarea>
-
-    </p> <hr>
-
-            <input type="submit" value="신청"/>
-            <input type="reset" value="취소"/>
-            <input type="button" value="버튼" onclick="alert('버튼 클릭')"/>
-    </form>
+  <footer>
+    <p>최종 수정일: 2026-10-20</p>
+  </footer>
 </body>
-
+</html>
